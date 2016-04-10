@@ -1,0 +1,33 @@
+<header class="site-header">
+
+  <div class="wrapper">
+		
+		<article id="wrapper">
+
+		<header id="site-header">
+				 <nav>
+				 	 <a href="javascript:void(0)" id="menu">MENU</a>
+					 
+				 	<ul id="items">
+				    {% for pattern in site.patterns %}
+				      <li>
+								<a href="#{{ pattern.id }}">{{ pattern.title }}</a>
+				      </li>
+				    {% endfor %}
+						
+				   	 	<!-- <li><a href="#line-behind">Line Behind Text</a></li>
+				     	<li><a href="#side-slider">Mobile Nav - Side Slider</a></li>
+				    	<li><a href="#top-slider">Mobile Nav - Top Slider</a></li>
+				    	<li><a href="#banner">Responsive Rotating Banner</a></li>
+				    	<li><a href="#social-media-icons">Social Media Icons</a></li>
+							<li><a href="#the-text-expander">Text Expander</a></li>
+							<li><a href="#text-reflection">Text Reflection</a></li>
+							<li><a href="#accordion-tabs">Minimal Accordion Tabs</a></li> -->
+				 	 </ul>
+				 </nav>
+
+			<img src="../assets/images/olive.png" alt="olive icon" id="olive"/>
+			<h1 data-reflection="MOCKTAILS">MOCKTAILS</h1>
+			<!--<h2>A Menu of Just Add Water Web Patterns and Components</h2>-->
+			<h2>All the flavor, none of the SASS</h2>
+		</header>

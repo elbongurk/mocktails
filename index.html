@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div>
+
+  <ul>
+    {% for pattern in site.patterns %}
+      <li>
+				<section class="line" id="{{ pattern.id }}">
+					{{ pattern.content }}
+				</section>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
